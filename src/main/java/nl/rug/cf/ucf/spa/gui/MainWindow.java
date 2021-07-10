@@ -333,7 +333,7 @@ public class MainWindow extends javax.swing.JFrame {
                 initSolverUI();
                 restrictSupervisorCheckBox.setVisible(false);
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }        
     }//GEN-LAST:event_openLivingLabMenuItemActionPerformed
@@ -348,7 +348,7 @@ public class MainWindow extends javax.swing.JFrame {
                 initSolverUI();
                 restrictSupervisorCheckBox.setVisible(true);
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }        
     }//GEN-LAST:event_openCapstoneMenuItemActionPerformed
