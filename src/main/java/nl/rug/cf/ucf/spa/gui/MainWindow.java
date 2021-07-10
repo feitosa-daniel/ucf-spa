@@ -416,12 +416,14 @@ public class MainWindow extends javax.swing.JFrame {
             projectsText += assignmentSolver.getProjectInfoHTML(p) + "<br><br>";
         }
         projectsTextPane.setText(projectsText + "</html>");
+        projectsTextPane.setCaretPosition(0);
         
         String studentsText = "<html>";
         for (String s: assignmentSolver.getStudents()) {
             studentsText += assignmentSolver.getStudentInfoHTML(s);
         }
         studentsTextPane.setText(studentsText + "</html>");
+        studentsTextPane.setCaretPosition(0);
     }
     
     private void initSolverUI() {
