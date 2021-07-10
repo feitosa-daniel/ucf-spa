@@ -54,6 +54,8 @@ To run the application, [**Java**](https://java.com/en/download/help/download_op
 1. While manual adjustments are desired, change individual assignments manually, fix the assignment and click on "Assign" again.
 1. Click on "Export" to save the final student-project assignments.
 
+![demo](ucf-spa-demo.gif)
+
 ### Input File Format
 
 The application supports Excel (`.xlsx` and `.xls`) and CSV spreadsheet files.
