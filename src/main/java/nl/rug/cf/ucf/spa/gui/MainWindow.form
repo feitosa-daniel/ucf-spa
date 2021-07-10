@@ -8,7 +8,7 @@
         <Property name="dialogTitle" type="java.lang.String" value="Choose spreadsheet to open"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;All allowed formats&quot;, &quot;xlsx&quot;, &quot;xls&quot;, &quot;csv&quot;));&#xa;openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;Microsoft Excel (.xlsx, .xls)&quot;, &quot;xlsx&quot;, &quot;xls&quot;));&#xa;openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;CSV file (.csv)&quot;, &quot;csv&quot;));"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;All allowed formats&quot;, &quot;xlsx&quot;, &quot;xls&quot;, &quot;csv&quot;));&#xa;openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;Microsoft Excel (.xlsx, .xls)&quot;, &quot;xlsx&quot;, &quot;xls&quot;));&#xa;openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;CSV file (.csv)&quot;, &quot;csv&quot;));&#xa;openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JFileChooser" name="saveFileChooser">
@@ -17,7 +17,7 @@
         <Property name="dialogType" type="int" value="1"/>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="saveFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;Text file (.txt)&quot;, &quot;txt&quot;));"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="saveFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;Text file (.txt)&quot;, &quot;txt&quot;));&#xa;openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());"/>
       </AuxValues>
     </Component>
     <Menu class="javax.swing.JMenuBar" name="menuBar">
@@ -166,9 +166,6 @@
           <SubComponents>
             <Container class="javax.swing.JSplitPane" name="informationSplitPanel">
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
                 <Property name="dividerLocation" type="int" value="385"/>
                 <Property name="resizeWeight" type="double" value="0.5"/>
               </Properties>
@@ -436,8 +433,6 @@
                     <Property name="autoResizeMode" type="int" value="1"/>
                     <Property name="focusable" type="boolean" value="false"/>
                     <Property name="rowHeight" type="int" value="30"/>
-                    <Property name="showHorizontalLines" type="boolean" value="false"/>
-                    <Property name="showVerticalLines" type="boolean" value="false"/>
                   </Properties>
                 </Component>
               </SubComponents>

@@ -76,10 +76,12 @@ public class MainWindow extends javax.swing.JFrame {
         openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("All allowed formats", "xlsx", "xls", "csv"));
         openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Microsoft Excel (.xlsx, .xls)", "xlsx", "xls"));
         openFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("CSV file (.csv)", "csv"));
+        openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());
 
         saveFileChooser.setAcceptAllFileFilterUsed(false);
         saveFileChooser.setDialogType(javax.swing.JFileChooser.SAVE_DIALOG);
         saveFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Text file (.txt)", "txt"));
+        openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 700));
@@ -88,7 +90,6 @@ public class MainWindow extends javax.swing.JFrame {
         contentSplitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
         contentSplitPane.setResizeWeight(0.4);
 
-        informationSplitPanel.setBorder(null);
         informationSplitPanel.setDividerLocation(385);
         informationSplitPanel.setResizeWeight(0.5);
 
@@ -228,8 +229,6 @@ public class MainWindow extends javax.swing.JFrame {
         assignmentsTable.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_NEXT_COLUMN);
         assignmentsTable.setFocusable(false);
         assignmentsTable.setRowHeight(30);
-        assignmentsTable.setShowHorizontalLines(false);
-        assignmentsTable.setShowVerticalLines(false);
         assignmentsScrollPane.setViewportView(assignmentsTable);
 
         javax.swing.GroupLayout interactionPanelLayout = new javax.swing.GroupLayout(interactionPanel);
