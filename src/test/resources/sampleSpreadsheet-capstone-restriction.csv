@@ -1,0 +1,7 @@
+projects,supervisor,preferred,"John Doe","Martha Glenn","Carol Smith"
+"Project A","Sup One",,1,,
+"Project B","Sup One",y,,,1
+"Project C","Sup One",,,1,2
+"Project D","Sup Two",,2,,3
+"Project E","Sup Two",y,3,2,
+"Project F","Sup Two",y,,3,

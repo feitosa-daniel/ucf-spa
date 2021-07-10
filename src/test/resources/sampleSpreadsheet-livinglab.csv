@@ -1,0 +1,5 @@
+projects,organization,min-students,max-students,"John Doe","Martha Glenn","Carol Smith","Agatha Ash","Marc Groen","Debora Visser","Gregory Adam"
+"Project A","Host 1",1,4,1,1,,1,,1,
+"Project B","Host 2",1,4,2,2,1,,3,,2
+"Project C","Host 3",1,4,3,3,2,3,1,3,1
+"Project D","Host 4",1,4,,,3,2,2,2,3
