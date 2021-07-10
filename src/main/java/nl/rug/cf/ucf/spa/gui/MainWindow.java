@@ -379,13 +379,16 @@ public class MainWindow extends javax.swing.JFrame {
                     for (int r=0; r<assignmentsTable.getRowCount(); r++){
                         String student = (String) assignmentsTable.getValueAt(r, 0);
                         String project = (String) assignmentsTable.getValueAt(r, 1);
-                        bw.write(String.format("%s: %s", student, project));
+                        String rank = assignmentSolver.getRank(student, project);
+                        rank = rank.isEmpty() ? "no rank " : String.format("choice %s", rank);
+
+                        bw.write(String.format("%s: (%s) %s", student, rank, project));
                         bw.newLine();
                     }
                 }
                 
                 JOptionPane.showMessageDialog(this, "Assignments exported with success!", "Success", JOptionPane.INFORMATION_MESSAGE);
-            } catch (HeadlessException | IOException e) {
+            } catch (HeadlessException | DataNotFoundException | IOException e) {
                 JOptionPane.showMessageDialog(this, "Could not export assignments.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         }

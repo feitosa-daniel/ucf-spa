@@ -54,6 +54,13 @@ public abstract class AssignmentSolver {
         return students;
     }
     
+    public String getRank(String student, String project) throws DataNotFoundException {
+        int pIdx = getProjectIndex(project);
+        int sIdx = getStudentIndex(student);
+
+        return data.getCell(pIdx, sIdx);
+    }
+
     abstract public String getProjectInfoHTML(String project) throws DataNotFoundException;
     
     abstract public String getStudentInfoHTML(String student) throws DataNotFoundException;
