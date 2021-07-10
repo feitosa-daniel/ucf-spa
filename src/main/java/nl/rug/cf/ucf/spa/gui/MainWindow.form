@@ -15,6 +15,7 @@
       <Properties>
         <Property name="acceptAllFileFilterUsed" type="boolean" value="false"/>
         <Property name="dialogType" type="int" value="1"/>
+        <Property name="dialogTitle" type="java.lang.String" value="Choose export file"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="saveFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter(&quot;Text file (.txt)&quot;, &quot;txt&quot;));&#xa;openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());"/>

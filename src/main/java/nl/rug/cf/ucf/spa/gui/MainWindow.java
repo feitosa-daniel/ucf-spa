@@ -80,6 +80,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         saveFileChooser.setAcceptAllFileFilterUsed(false);
         saveFileChooser.setDialogType(javax.swing.JFileChooser.SAVE_DIALOG);
+        saveFileChooser.setDialogTitle("Choose export file");
         saveFileChooser.addChoosableFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Text file (.txt)", "txt"));
         openFileChooser.setCurrentDirectory(javax.swing.filechooser.FileSystemView.getFileSystemView().getDefaultDirectory());
 
@@ -342,7 +343,7 @@ public class MainWindow extends javax.swing.JFrame {
             return;
         }
         
-        if (saveFileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+        if (saveFileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
             File targetFile = saveFileChooser.getSelectedFile();
             if (!targetFile.getName().matches(".*\\.txt$")) {
                 targetFile = new File(targetFile.getAbsolutePath()+".txt");
