@@ -58,7 +58,7 @@ To run the application, [**Java**](https://java.com/en/download/help/download_op
 
 The application supports Excel (`.xlsx` and `.xls`) and CSV spreadsheet files.
 
-Examples of valid spreadsheets can be found [here](src%20test%20resources).
+Examples of valid spreadsheets can be found [here](src/test/resources).
 
 #### **Spreadsheet Format for Capstone Assignments**
 
