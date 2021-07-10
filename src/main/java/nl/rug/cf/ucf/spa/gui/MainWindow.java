@@ -16,7 +16,6 @@
  */
 package nl.rug.cf.ucf.spa.gui;
 
-import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.Color;
 import java.awt.HeadlessException;
 import java.io.BufferedWriter;
@@ -474,13 +473,6 @@ public class MainWindow extends javax.swing.JFrame {
             projectsComboBox.addItem(p);
         }
         projectColumn.setCellEditor(new DefaultCellEditor(projectsComboBox));
-    }
-    
-    public static void main(String args[]) {
-        FlatLightLaf.setup();
-        java.awt.EventQueue.invokeLater(() -> {
-            new MainWindow().setVisible(true);
-        });
     }
     
     private AssignmentSolver assignmentSolver;

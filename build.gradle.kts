@@ -45,7 +45,7 @@ java {
 }
 
 application {
-    mainClass.set("nl.rug.cf.ucf.spa.gui.MainWindow")
+    mainClass.set("nl.rug.cf.ucf.spa.SPA")
 }
 
 tasks.withType<JavaCompile> {
