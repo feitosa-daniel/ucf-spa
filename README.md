@@ -44,6 +44,12 @@ The applications works with machine **Windows**, **MacOS** or **Linux** operatin
 
 To run the application, [**Java**](https://java.com/en/download/help/download_options.html) (version 8 or greater) must be preinstalled in the machine.
 
+> **NOTE:** If you use **Windows**, make sure you have the *64-bit* version of Java.
+>
+> The application will show a warning if you have an incompatible version installed.
+>
+> You can find the 64-bit version [here](https://java.com/en/download/manual.jsp) (look for "*Windows Offline (64-bit)*")
+
 ## Use Instructions
 
 1. Make sure you are using one of the supported operating systems and have Java installed (see requirements).

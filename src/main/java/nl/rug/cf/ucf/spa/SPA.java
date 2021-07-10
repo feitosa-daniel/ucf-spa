@@ -17,6 +17,7 @@
 package nl.rug.cf.ucf.spa;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.JOptionPane;
 import nl.rug.cf.ucf.spa.gui.MainWindow;
 
 public class SPA {
@@ -24,7 +25,13 @@ public class SPA {
         System.setProperty("apple.laf.useScreenMenuBar", "true");
         FlatLightLaf.setup();
         java.awt.EventQueue.invokeLater(() -> {
-            new MainWindow().setVisible(true);
+            MainWindow main = new MainWindow();
+            main.setVisible(true);
+
+            if (!System.getProperty("sun.arch.data.model").equals("64")) {
+                JOptionPane.showMessageDialog(main, "You do not have Java 64-bit version installed.\nYou can find it at https://java.com/download/manual.jsp", "Error", JOptionPane.ERROR_MESSAGE);
+                System.exit(0);
+            }
         });
     }
 }
